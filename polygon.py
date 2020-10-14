@@ -2,7 +2,6 @@
 ''' Program 1 : Check if the given point lies inside or outside a polygon? '''
 
 from shapely.geometry import Point, Polygon
-
 def check_point_position(polygon_coords, point_coords):
 	polygon = Polygon(list(eval(polygon_coords)))
 	point = Point(list(eval(point_coords)))
