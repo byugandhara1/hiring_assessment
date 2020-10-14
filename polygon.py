@@ -5,10 +5,7 @@ from shapely.geometry import Point, Polygon
 def check_point_position(polygon_coords, point_coords):	
 	polygon = Polygon(polygon_coords)
 	point = Point(point_coords)
-	if point.within(polygon):
-		print("Point is within polygon")
-	elif not point.within(polygon) and not polygon.touches(point):
-		print("Point is outside polygon")
+	print(point.within(polygon))
 
 polygon_coords = input('Enter polygon coordinates -')
 point_coords = input('Enter point coordinates  -')
